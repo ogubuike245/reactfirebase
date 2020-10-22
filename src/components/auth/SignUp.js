@@ -20,26 +20,34 @@ class SignUp extends Component {
   render() {
     return (
       <div className="container">
-        <form onSubmit={this.handleSubmit} className="white">
-          <h5 className="grey-text text-darken-3">SIGN UP</h5>
+        <form onSubmit={this.handleSubmit} className="pink">
+          <h5 className="white-text text-darken-3 center">SIGN UP</h5>
           <div className="input-field">
-            <label htmlFor="email">EMAIL</label>
+            <label htmlFor="email" className="white-text">
+              EMAIL
+            </label>
             <input type="email" id="email" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="firstname">FIRST NAME</label>
+            <label htmlFor="firstname" className="white-text">
+              FIRST NAME
+            </label>
             <input type="text" id="firstname" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="lastname">LAST NAME</label>
+            <label htmlFor="lastname" className="white-text">
+              LAST NAME
+            </label>
             <input type="text" id="lastname" onChange={this.handleChange} />
           </div>
           <div className="input-field">
-            <label htmlFor="password">PASSWORD</label>
+            <label htmlFor="password" className="white-text">
+              PASSWORD
+            </label>
             <input type="password" id="password" onChange={this.handleChange} />
           </div>
-          <div className="input-field">
-            <button className="btn pink lghten-1 z-depth-2">LOGIN</button>
+          <div className="input-field center">
+            <button className="btn pink lghten-1 z-depth-2 ">LOGIN</button>
           </div>
         </form>
       </div>
